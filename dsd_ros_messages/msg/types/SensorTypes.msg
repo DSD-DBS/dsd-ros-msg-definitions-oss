@@ -1,0 +1,42 @@
+# SPDX-FileCopyrightText: Copyright DB Netz AG
+# SPDX-License-Identifier: Apache-2.0
+
+# SensorType
+#
+# Created:  2020-04-20
+# Modified: 2021-01-07
+# Version:  4.4
+# Status:   Consolidated
+#
+# Description: List of distinct sensor types and of their mounting positions.
+
+uint8 SENSOR_TYPE_UNKNOWN = 0
+uint8 SENSOR_TYPE_RADAR = 1
+uint8 SENSOR_TYPE_LIDAR= 2
+uint8 SENSOR_TYPE_CAMERA = 3
+uint8 SENSOR_TYPE_MAP = 4
+uint8 SENSOR_TYPE_FUSION = 5
+uint8 SENSOR_TYPE_LOCALIZATION = 6
+
+uint8 SENSOR_SUBTYPE_UNKNOWN = 0
+uint8 SENSOR_SUBTYPE_SHORT_RANGE = 1
+uint8 SENSOR_SUBTYPE_MID_RANGE= 2
+uint8 SENSOR_SUBTYPE_LONG_RANGE = 3
+uint8 SENSOR_SUBTYPE_IR = 4
+uint8 SENSOR_SUBTYPE_RGB = 5
+uint8 SENSOR_SUBTYPE_GROUND_TRUTH = 10
+uint8 SENSOR_SUBTYPE_CONSOLIDATED = 11
+uint8 SENSOR_SUBTYPE_PATH_A = 12
+uint8 SENSOR_SUBTYPE_PATH_B = 13
+uint8 SENSOR_SUBTYPE_SANAR2 = 14
+
+uint8 SENSOR_POSITION_UNKNOWN = 0
+uint8 SENSOR_POSITION_ETA = 1 # Front
+uint8 SENSOR_POSITION_ETB = 2 # Rear
+
+# Remark: Relative to the train operators point of view
+
+uint8 SENSOR_SUBPOSITION_UNKNOWN = 0
+uint8 SENSOR_SUBPOSITION_LEFT = 1
+uint8 SENSOR_SUBPOSITION_RIGHT= 2
+uint8 SENSOR_SUBPOSITION_MIDDLE= 3
